@@ -23,7 +23,7 @@ function Home () {
     <>
       {loading ? (<h1>Loading..</h1>)  : 
       (
-        <div>
+        <div style={{display:"flex",flexDirection:"row",flexWrap:"wrap",width:"100%"}}>
         {movies.map((movie) =>(
       <Movie 
         key={movie.id}
